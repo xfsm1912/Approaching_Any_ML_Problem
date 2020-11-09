@@ -9,10 +9,10 @@ import torch
 
 from sklearn import metrics
 from sklearn.model_selection import train_test_split
-
-import dataset
-import engine
-from model import get_model
+#
+import chapter10_image.src.dataset as dataset
+import chapter10_image.src.engine as engine
+from chapter10_image.src.model import get_model
 
 if __name__ == '__main__':
     # location of train.csv and train_png folder

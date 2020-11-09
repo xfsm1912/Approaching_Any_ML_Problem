@@ -54,7 +54,7 @@ def create_dataset(training_df, image_dir):
 
 if __name__ == '__main__':
     csv_path = ''
-    image_path = '/Users/jianhuama/Dropbox/deepshareAI/Approaching_Any_ML_Problem/chapter9/input/archive/input/train_png/'
+    image_path = '/Users/jianhuama/Dropbox/deepshareAI/Approaching_Any_ML_Problem/chapter10_image/input/archive/input/train_png/'
 
     # read_csv with imageid and target columns
     df = pd.read_csv(csv_path)

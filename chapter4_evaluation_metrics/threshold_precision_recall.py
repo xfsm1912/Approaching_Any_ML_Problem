@@ -1,4 +1,4 @@
-import chapter3.utils as utils
+import chapter4_evaluation_metrics.utils as utils
 import matplotlib.pyplot as plt
 
 y_true = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0]

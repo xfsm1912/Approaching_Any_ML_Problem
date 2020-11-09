@@ -1,4 +1,4 @@
-import chapter3.utils as utils
+import chapter4_evaluation_metrics.utils as utils
 import matplotlib.pyplot as plt
 from sklearn import metrics
 
