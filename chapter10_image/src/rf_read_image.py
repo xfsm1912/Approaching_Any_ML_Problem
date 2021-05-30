@@ -91,7 +91,7 @@ if __name__ == '__main__':
 
         # fit random forest without any modification of time
         clf = ensemble.RandomForestClassifier(n_jobs=-1)
-        clf.fit(train_df, ytrain)
+        clf.fit(xtrain, ytrain)
 
         # predict probability of class 1
         preds = clf.predict_proba(xtest)[:, 1]

@@ -70,6 +70,8 @@ class SIIMDataset(torch.utils.data.Dataset):
         # image and maks paths
         for imgid in image_ids:
             # TODO: where is TRAIN_PATH comes from
+            # https://www.kaggle.com/seriousran/siim-acr-image-n-mask
+            # https://www.kaggle.com/vishnus/siim-pnemotharax
             files = glob.glob(os.path.join(TRAIN_PATH, imgid, '*.png'))
             self.data[counter] = {
                 'img_path': os.path.join(

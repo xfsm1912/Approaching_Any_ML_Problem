@@ -26,12 +26,15 @@ if __name__ == '__main__':
     epoches = 10
 
     # load the dataframe
+    # https://www.kaggle.com/abhishek/train-your-own-mask-rcnn/data?select=train-rle.csv
     df = pd.read_csv(os.path.join(data_path, 'train.csv'))
 
     # fetch all image ids
-    images = df.ImageId.valeus.tolist()
+    images = df.ImageId.values.tolist()
 
     # a list with image locations
+    # https://www.kaggle.com/abhishek/siim-png-images
+    # https://www.kaggle.com/abhishek/siim-png-train-csv
     images = [
         os.path.join(data_path, 'train_png', image + '.png') for image in images
     ]

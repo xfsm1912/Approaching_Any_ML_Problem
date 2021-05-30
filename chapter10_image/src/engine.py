@@ -27,14 +27,14 @@ def train(data_loader, model, optimizer, device):
 
         # move inputs/targets to cuda/cpu device
         inputs = inputs.to(device, dtype=torch.float)
-        targets = inputs.to(device, dtype=torch.float)
+        targets = targets.to(device, dtype=torch.float)
 
         # zero grad the optimizer
         optimizer.zero_grad()
         # do the forward step of model
         outputs = model(inputs)
         # calculate loss
-        loss = nn.BCEWithLogitsLoss()(outputs, targets.view(-1, -1))
+        loss = nn.BCEWithLogitsLoss()(outputs, targets.view(-1, 1))
         # backward tep the loss
         loss.backward()
         # step optimizer
